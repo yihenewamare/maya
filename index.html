@@ -1,90 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maya Portfolio</title>
-    <link rel="stylesheet" href="main.css">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Courier+Prime&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maya Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
-        <div class="logo">Maya</div>
+<!-- Sidebar -->
+<div class="sidebar">
+    <div class="icons">
+        <i class="fa-regular fa-shirt"></i>
+        <i class="fa-regular fa-image"></i>
+        <i class="fa-regular fa-copy"></i>
+    </div>
 
+    <div class="products">
+        <img src="https://via.placeholder.com/70x70" alt="">
+        <img src="https://via.placeholder.com/70x70" alt="">
+        <img src="https://via.placeholder.com/70x70" alt="">
+    </div>
+</div>
+
+<!-- Main Content -->
+<div class="main">
+
+    <!-- Navbar -->
+    <header>
         <nav>
-            <a href="#">HOME</a>
-            <a href="#">OUR WORKS</a>
-            <a href="#">SERVICES</a>
-            <a href="#">CONTACT ME</a>
-            <a href="#">ABOUT</a>
+            <ul>
+                <li>HOME</li>
+                <li>OUR WORKS</li>
+                <li>SERVICES</li>
+                <li>CONTACT ME</li>
+                <li>ABOUT</li>
+            </ul>
         </nav>
+
+        <div class="logo">
+            <span></span> MAYA
+        </div>
     </header>
 
     <!-- Hero -->
     <section class="hero">
-        <div class="hero-left">
-            <h1>
-                <span class="green">YOUR IDEA,</span>
-                <span class="orange">OUR DESIGN</span>
-            </h1>
-        </div>
-
-        <div class="hero-right">
+        <div class="hero-text">
+            <h1>YOUR IDEA,</h1>
+            <h2>OUR DESIGN</h2>
             <p>
-                Creative design and premium printing solutions.
+                Creative design and premium printing solutions.<br>
                 From concept to print, we bring your vision to life.
             </p>
         </div>
-    </section>
 
-    <!-- Banner -->
-    <section class="banner">
-        <img src="./package.png" alt="">
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800"
+                alt="">
+        </div>
     </section>
 
     <!-- Services -->
     <section class="services">
-        <h2>WHAT CAN I DO FOR YOU?</h2>
+        <h2>WHAT CAN I DO FOR YOU ?</h2>
 
-        <div class="service-item">
-            <div class="service-left">
-                <i class="fa-regular fa-shirt"></i>
-                <span>Clothes</span>
-            </div>
-
-            <div class="service-right">
+        <div class="service-row">
+            <div>
+                <i class="fa-solid fa-shirt"></i>
                 T-shirt
             </div>
+
+            <div>Clothes</div>
         </div>
     </section>
 
-    <!-- Portfolio -->
-    <section class="portfolio">
-        <div class="portfolio-header">
+    <!-- Designs -->
+    <section class="designs">
+        <div class="title-row">
             <h2>MY DESIGNS</h2>
 
             <div class="filters">
-                <a href="#">ALL</a>
-                <a href="#">T-SHIRT</a>
-                <a href="#">LOGO</a>
-                <a href="#">PACKAGING</a>
+                <span>ALL</span>
+                <span>T-SHIRT</span>
+                <span>LOGO</span>
+                <span>PACKAGING</span>
             </div>
         </div>
 
-        <div class="gallery">
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
+        <div class="cards">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600"
+                    alt="">
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600"
+                    alt="">
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600"
+                    alt="">
+            </div>
+        </div>
+
+        <button class="btn">SEE MORE ➜</button>
+    </section>
+
+    <!-- Recent Section -->
+    <section class="recent">
+        <div class="recent-left">
+            <h3>RESENT</h3>
+
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+        <div class="recent-right">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
         </div>
     </section>
+
+</div>
 
 </body>
 </html>
