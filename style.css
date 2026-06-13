@@ -216,7 +216,7 @@ body {
 
 .see-more-btn {
     background-color: var(--dark-green);
-    color: #ffffff;
+    color: hwb(86 3% 64%);
     border: none;
     padding: 12px 40px;
     font-size: 1rem;
