@@ -1,144 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>MAYA</title>
-
-<link rel="stylesheet" href="style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Idea, Our Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-
-<!-- Left Pattern -->
-
-<div class="pattern-left">
-
-<div></div>
-
-<div></div>
-
-<div></div>
-
-</div>
-
-
-<!-- Top Pattern -->
-
-<div class="pattern-top">
-
-▣
-
-</div>
-
-
-
-
-<header>
-
-<nav>
-
-<ul>
-
-<li><a href="#">HOME</a></li>
-
-<li><a href="#">OUR WORKS</a></li>
-
-<li><a href="#">SERVICES</a></li>
-
-<li><a href="#">CONTACT ME</a></li>
-
-<li><a href="#">ABOUT</a></li>
-
-</ul>
-
-
-<div class="logo">
-
-<div class="dot"></div>
-
-<span>MAYA</span>
-
-</div>
-
-
-</nav>
-
-</header>
-
-
-
-
-
-<section class="hero">
-
-
-<div class="hero-text">
-
-
-<h1>
-
-<span class="green">
-
-YOUR IDEA,
-
-</span>
-
-<br>
-
-<span class="orange">
-
-OUR DESIGN
-
-</span>
-
-</h1>
-
-
-
-<p>
-
-Creative design and premium printing solutions.
-
-<br>
-
-From concept to print, we bring your vision to life.
-
-</p>
-
-
-</div>
-
-
-
-
-
-<div class="hero-image">
-
-<img src="hero.jpg" alt="Hero">
-
-</div>
-
-
-
-
-<div class="circle small"></div>
-
-<div class="circle big"></div>
-
-
-
-</section>
-
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="#" class="nav-item">HOME</a>
+            <a href="#" class="nav-item">PORTFOLIO</a>
+            <a href="#" class="nav-item">PRODUCTS</a>
+            <a href="#" class="nav-item">CONTACT US</a>
+            <a href="#" class="nav-item">ABOUT</a>
+        </div>
+        <div class="nav-brand">BRAND</div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                YOUR IDEA,<br>
+                <span class="highlight-orange">OUR DESIGN</span>
+            </h1>
+            <p class="hero-subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+        </div>
+        
+        <div class="hero-graphic-container">
+            <div class="dot dot-small"></div>
+            <div class="dot dot-large"></div>
+            <div class="circle-graphic">
+                <img src="hero-mountain.jpg" alt="Creative Design Concept" class="hero-img">
+            </div>
+        </div>
+    </header>
+
+    <section class="portfolio">
+        <header class="portfolio-header">
+            <h2 class="section-sub">WHAT CAN I DO FOR YOU ?</h2>
+            
+            <div class="filter-bar">
+                <div class="category-info">
+                    <span>👕 T-shirt</span>
+                    <span>Clothes</span>
+                </div>
+                <h2 class="section-main">MY DESIGNS</h2>
+                <div class="filter-links">
+                    <a href="#" class="filter-item active">ALL</a>
+                    <a href="#" class="filter-item">T-SHIRT</a>
+                    <a href="#" class="filter-item">LOGO</a>
+                    <a href="#" class="filter-item">PACKAGING</a>
+                </div>
+            </div>
+        </header>
+
+        <div class="gallery-grid">
+            <div class="capsule-card">
+                <img src="tshirt-design.jpg" alt="T-shirt Design">
+            </div>
+            <div class="capsule-card">
+                <img src="poster-design.jpg" alt="Fishing Poster Design">
+            </div>
+            <div class="capsule-card">
+                <img src="logo-design.jpg" alt="Crown Logo Design">
+            </div>
+        </div>
+
+        <div class="center-btn">
+            <button class="see-more-btn">
+                SEE MORE <span class="arrow">➔</span>
+            </button>
+        </div>
+    </section>
+
+    <section class="recent-section">
+        <div class="recent-container">
+            <aside class="recent-sidebar">
+                <h3 class="sidebar-title">RECENT</h3>
+                <ul class="sidebar-list">
+                    <li>● Project Category One</li>
+                    <li>● Graphic Design Items</li>
+                    <li>● Brand Identity Assets</li>
+                </ul>
+            </aside>
+
+            <main class="content-grid">
+                <div class="grid-box"></div>
+                <div class="grid-box"></div>
+                <div class="grid-box"></div>
+                <div class="grid-box"></div>
+                <div class="grid-box"></div>
+                <div class="grid-box"></div>
+            </main>
+        </div>
+    </section>
 
 </body>
-
 </html>
