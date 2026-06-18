@@ -1,105 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Idea, Our Design</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maya Creative Studio - Design & Print Solutions</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <!-- Left: nav links -->
+      <div class="nav-left">
+        <a href="#hero" class="nav-link">
+          <svg width="18" height="17" viewBox="0 0 21 20" fill="none">
+            <path d="M18.05 4.81774L12.29 0.787741C10.72 -0.312259 8.31001 -0.25226 6.8 0.91774L1.79 4.82774C0.79 5.60774 0 7.20774 0 8.46775V15.3678C0 17.9177 2.07 19.9978 4.62 19.9978H15.4C17.95 19.9978 20.02 17.9277 20.02 15.3778V8.59775C20.02 7.24774 19.15 5.58774 18.05 4.81774ZM10.76 15.9978C10.76 16.4078 10.42 16.7478 10.01 16.7478C9.60001 16.7478 9.26001 16.4078 9.26001 15.9978V12.9978C9.26001 12.5878 9.60001 12.2478 10.01 12.2478C10.42 12.2478 10.76 12.5878 10.76 12.9978V15.9978Z" fill="#105D0D"/>
+          </svg>
+          <span>HOME</span>
+        </a>
+        <a href="#works" class="nav-link">OUR WORKS</a>
+        <a href="#services" class="nav-link">SERVICES</a>
+        <a href="#contact" class="nav-link">CONTACT ME</a>
+        <a href="#about" class="nav-link">ABOUT</a>
+      </div>
 
-    <nav class="navbar">
-        <div class="nav-links">
-            <a href="#" class="nav-item">HOME</a>
-            <a href="#" class="nav-item">PORTFOLIO</a>
-            <a href="#" class="nav-item">PRODUCTS</a>
-            <a href="#" class="nav-item">CONTACT US</a>
-            <a href="#" class="nav-item">ABOUT</a>
-        </div>
-        <div class="nav-brand">BRAND</div>
-    </nav>
+      <!-- Right: brand + icon -->
+      <div class="nav-right">
+        <span class="brand-name">MAYA</span>
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <path d="M19.8377 13.9368C19.6726 13.6667 19.2083 13.2464 18.0525 13.4465C17.4127 13.5566 16.7626 13.6066 16.1125 13.5766C13.7081 13.4766 11.5308 12.406 10.0138 10.7551C8.67235 9.30434 7.84677 7.4133 7.83645 5.37222C7.83645 4.23162 8.06352 3.13104 8.52788 2.09049C8.98193 1.07996 8.66203 0.549675 8.43501 0.329558C8.19767 0.0994366 7.64038 -0.220733 6.54655 0.2195C2.32599 1.94041 -0.284764 6.04258 0.0248116 10.4349C0.334388 14.5671 3.32696 18.099 7.28953 19.4297C8.23895 19.7499 9.23991 19.94 10.2718 19.98C10.4369 19.99 10.602 20 10.7671 20C14.2241 20 17.4643 18.4192 19.5075 15.7277C20.1989 14.7972 20.0132 14.2069 19.8377 13.9368Z" fill="#FFAA00"/>
+        </svg>
+      </div>
 
-    <header class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">
-                YOUR IDEA,<br>
-                <span class="highlight-orange">OUR DESIGN</span>
-            </h1>
-            <p class="hero-subtitle">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-        </div>
-        
-        <div class="hero-graphic-container">
-            <div class="dot dot-small"></div>
-            <div class="dot dot-large"></div>
-            <div class="circle-graphic">
-                <img src="hero-mountain.jpg" alt="Creative Design Concept" class="hero-img">
-            </div>
-        </div>
-    </header>
+      <!-- Mobile: hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
 
-    <section class="portfolio">
-        <header class="portfolio-header">
-            <h2 class="section-sub">WHAT CAN I DO FOR YOU ?</h2>
-            
-            <div class="filter-bar">
-                <div class="category-info">
-                    <span>👕 T-shirt</span>
-                    <span>Clothes</span>
-                </div>
-                <h2 class="section-main">MY DESIGNS</h2>
-                <div class="filter-links">
-                    <a href="#" class="filter-item active">ALL</a>
-                    <a href="#" class="filter-item">T-SHIRT</a>
-                    <a href="#" class="filter-item">LOGO</a>
-                    <a href="#" class="filter-item">PACKAGING</a>
-                </div>
-            </div>
-        </header>
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#hero" class="mobile-nav-link">HOME</a>
+      <a href="#works" class="mobile-nav-link">OUR WORKS</a>
+      <a href="#services" class="mobile-nav-link">SERVICES</a>
+      <a href="#contact" class="mobile-nav-link">CONTACT ME</a>
+      <a href="#about" class="mobile-nav-link">ABOUT</a>
+    </div>
+  </nav>
 
-        <div class="gallery-grid">
-            <div class="capsule-card">
-                <img src="A1.jpg" alt="T-shirt Design">
-            </div>
-            <div class="capsule-card">
-                <img src="A2.jpg" alt="Fishing Poster Design">
-            </div>
-            <div class="capsule-card">
-                <img src="A3.jpg" alt="Crown Logo Design">
-            </div>
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <div class="hero-left">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            <span class="text-green">Your Idea,</span>
+            <br>
+            <span class="text-amber">Our Design</span>
+          </h1>
+          <p class="hero-description">
+            At Maya, we turn ideas into impact designs and high-quality prints. From branding and logo design to T-shirts, posters, social media graphics, and custom merchandise, we provide creative solutions that help businesses and individuals stand out. With a focus on quality, creativity, and attention to detail, we bring your vision to life from concept to print.
+          </p>
         </div>
 
-        <div class="center-btn">
-            <button class="see-more-btn">
-                SEE MORE <span class="arrow">➔</span>
-            </button>
+        <!-- Social Icons -->
+        <div class="social-icons">
+          <a href="#" aria-label="WhatsApp" class="social-link">
+            <svg width="21" height="24" viewBox="0 0 21 24" fill="none">
+              <g clip-path="url(#wa-clip)">
+                <mask id="wa-mask" style="mask-type: luminance;" maskUnits="userSpaceOnUse" x="0" y="0" width="21" height="24">
+                  <path d="M20.5607 0H0V24H20.5607V0Z" fill="white"/>
+                </mask>
+                <g mask="url(#wa-mask)">
+                  <path d="M18.8302 11.4104C18.5389 5.61044 14.0241 1.14045 8.82397 2.14045C5.24301 2.83045 2.37309 6.22043 1.81623 10.4004C1.49069 12.8204 1.91906 15.1104 2.85286 17.0004L2.09039 20.3104C1.91905 21.0604 2.51015 21.7404 3.14411 21.5304L5.93695 20.6304C7.20486 21.5004 8.6869 22.0004 10.2718 22.0004C15.1036 22.0004 19.1129 17.0304 18.8302 11.4104ZM14.4611 15.7204C14.384 15.9004 14.2897 16.0704 14.1698 16.2304C13.9556 16.5004 13.7243 16.7004 13.4673 16.8204C13.2103 16.9504 12.9276 17.0104 12.6277 17.0104C12.1908 17.0104 11.7196 16.8905 11.2313 16.6405C10.7344 16.3905 10.2462 16.0604 9.75786 15.6504C9.26097 15.2304 8.79836 14.7604 8.35283 14.2504C7.90735 13.7304 7.51325 13.1804 7.15344 12.6104C6.80219 12.0404 6.5195 11.4704 6.31389 10.9004C6.10829 10.3304 6.00549 9.78045 6.00549 9.26045C6.00549 8.92044 6.05689 8.59044 6.1597 8.29044C6.2625 7.98044 6.42528 7.70045 6.65659 7.45045C6.93073 7.13045 7.23056 6.98045 7.54754 6.98045C7.66747 6.98045 7.78739 7.01044 7.89876 7.07044C8.01013 7.13044 8.11296 7.22044 8.19006 7.35044L9.18378 8.99043C9.26089 9.12043 9.32086 9.23043 9.35512 9.34043C9.39796 9.45043 9.41509 9.55043 9.41509 9.65043C9.41509 9.77043 9.38091 9.89045 9.32094 10.0104C9.26097 10.1304 9.18379 10.2504 9.08098 10.3704L8.75544 10.7704C8.70403 10.8304 8.68699 10.8904 8.68699 10.9704C8.68699 11.0104 8.69547 11.0504 8.70403 11.0904C8.72117 11.1304 8.72982 11.1604 8.73839 11.1904C8.81549 11.3604 8.95248 11.5704 9.14095 11.8304C9.33799 12.0904 9.54368 12.3604 9.76642 12.6204C9.99773 12.8904 10.2205 13.1304 10.4518 13.3604C10.6745 13.5804 10.8629 13.7304 11.0085 13.8204C11.0343 13.8304 11.06 13.8504 11.0857 13.8604C11.12 13.8804 11.1543 13.8804 11.1971 13.8804C11.2742 13.8804 11.3256 13.8504 11.377 13.7904L11.7025 13.4104C11.8138 13.2804 11.9167 13.1904 12.011 13.1304C12.1138 13.0604 12.208 13.0204 12.3194 13.0204C12.4051 13.0204 12.4907 13.0404 12.585 13.0904C12.6792 13.1404 12.7819 13.2004 12.8847 13.2904L14.3069 14.4704C14.4183 14.5604 14.4953 14.6704 14.5467 14.7904C14.5895 14.9204 14.6153 15.0404 14.6153 15.1804C14.5639 15.3504 14.5297 15.5404 14.4611 15.7204Z" fill="#9EBB9D"/>
+                </g>
+              </g>
+              <defs>
+                <clipPath id="wa-clip">
+                  <rect width="20.5607" height="24" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <a href="#" aria-label="Facebook" class="social-link">
+            <svg width="21" height="24" viewBox="0 0 21 24" fill="none">
+              <g clip-path="url(#fb-clip)">
+                <mask id="fb-mask" style="mask-type: luminance;" maskUnits="userSpaceOnUse" x="0" y="0" width="21" height="24">
+                  <path d="M20.0605 0.5V23.5H0.5V0.5H20.0605Z" fill="white" stroke="white"/>
+                </mask>
+                <g mask="url(#fb-mask)">
+                  <path d="M11.9938 9.29999V12.25H14.2469C14.4096 12.25 14.5296 12.42 14.4953 12.61L14.1698 14.51C14.1441 14.65 14.0413 14.75 13.9213 14.75H11.9938V22H9.42366V14.75H7.96727C7.82163 14.75 7.71027 14.62 7.71027 14.45V12.55C7.71027 12.38 7.82163 12.25 7.96727 12.25H9.42366V9C9.42366 7.34 10.5716 6 11.9938 6H14.3068C14.4525 6 14.5638 6.12999 14.5638 6.29999V8.70001C14.5638 8.87001 14.4525 9 14.3068 9H12.2508C12.1051 9 11.9938 9.12999 11.9938 9.29999Z" stroke="#9EBB9D" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
+                  <path d="M1.71339 12.83V15C1.71339 20 3.42679 22 7.71027 22H12.8505C17.1339 22 18.8473 20 18.8473 15V9C18.8473 4 17.1339 2 12.8505 2H7.71027C3.42679 2 1.71339 4 1.71339 9" stroke="#9EBB9D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+              </g>
+              <defs>
+                <clipPath id="fb-clip">
+                  <rect width="20.5607" height="24" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <a href="#" aria-label="Instagram" class="social-link">
+            <svg width="21" height="24" viewBox="0 0 21 24" fill="none">
+              <g clip-path="url(#ig-clip)">
+                <mask id="ig-mask" style="mask-type: luminance;" maskUnits="userSpaceOnUse" x="0" y="0" width="21" height="24">
+                  <path d="M20.5607 0H0V24H20.5607V0Z" fill="white"/>
+                </mask>
+                <g mask="url(#ig-mask)">
+                  <path d="M7.71027 22H12.8505C17.1339 22 18.8473 20 18.8473 15V9C18.8473 4 17.1339 2 12.8505 2H7.71027C3.42679 2 1.71339 4 1.71339 9V15C1.71339 20 3.42679 22 7.71027 22Z" stroke="#9EBB9D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10.2804 15.5C11.9364 15.5 13.2788 13.933 13.2788 12C13.2788 10.067 11.9364 8.5 10.2804 8.5C8.62437 8.5 7.28192 10.067 7.28192 12C7.28192 13.933 8.62437 15.5 10.2804 15.5Z" stroke="#9EBB9D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M15.1088 7H15.1188" stroke="#9EBB9D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+              </g>
+              <defs>
+                <clipPath id="ig-clip">
+                  <rect width="20.5607" height="24" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <a href="#" aria-label="Telegram" class="social-link">
+            <svg width="22" height="20" viewBox="0 0 22 20" fill="none" stroke="#9EBB9D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14.251 17.9473L8.08398 10.749C8.00367 10.6553 7.90686 10.5777 7.79883 10.5195L7.6875 10.4678L2.71289 8.53223L19.543 1.73145L14.251 17.9473Z"/>
+            </svg>
+          </a>
         </div>
-    </section>
+      </div>
 
-    <section class="recent-section">
-        <div class="recent-container">
-            <aside class="recent-sidebar">
-                <h3 class="sidebar-title">RECENT</h3>
-                <ul class="sidebar-list">
-                    <li>● Project Category One</li>
-                    <li>● Graphic Design Items</li>
-                    <li>● Brand Identity Assets</li>
-                </ul>
-            </aside>
+      <!-- Right: decorative circle -->
+      <div class="hero-circle">
+        <svg viewBox="0 0 562 561" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="562" height="561" rx="280.5" fill="#105D0D"/>
+          <circle cx="281.395" cy="279.395" r="252.395" fill="white"/>
+          <circle cx="169.105" cy="123.674" r="54.6856" fill="white"/>
+          <circle cx="281" cy="281" r="227.156" fill="#105D0D"/>
+          <circle cx="285.5" cy="280.5" r="24.5" fill="white"/>
+          <circle cx="237.749" cy="215.749" r="43.7485" fill="white"/>
+          <circle cx="163.5" cy="132.5" r="55.5" fill="white"/>
+        </svg>
+      </div>
+    </div>
+  </section>
 
-            <main class="content-grid">
-                <div class="grid-box"></div>
-                <div class="grid-box"></div>
-                <div class="grid-box"></div>
-                <div class="grid-box"></div>
-                <div class="grid-box"></div>
-                <div class="grid-box"></div>
-            </main>
-        </div>
-    </section>
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <h2 class="section-title services-title">services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3 class="service-title">VIDEO EDITING</h3>
+        <p class="service-description">High-quality video editing that brings your vision to life with creativity, precision, and style. We create creative and impactful videos with smooth transitions, effects, and professional editing techniques.</p>
+      </div>
+      <div class="service-card">
+        <h3 class="service-title">GRAPHIC DESIGN</h3>
+        <p class="service-description">Creative graphic designs that communicate your brand identity. From logos to social media graphics, we craft visuals that leave a lasting impression on your audience.</p>
+      </div>
+      <div class="service-card">
+        <h3 class="service-title">BRANDING</h3>
+        <p class="service-description">Comprehensive branding solutions that define your identity. We create cohesive brand systems with logos, color palettes, and guidelines that resonate with your audience.</p>
+      </div>
+      <div class="service-card">
+        <h3 class="service-title">PRINT DESIGN</h3>
+        <p class="service-description">Professional print designs for all your marketing needs. From business cards to banners and posters, we deliver high-quality print-ready artwork with stunning detail.</p>
+      </div>
+    </div>
+  </section>
 
+  <!-- Our Works Section -->
+  <section id="works" class="works">
+    <h2 class="section-title">OUR WORKS</h2>
+    
+    <!-- Desktop grid -->
+    <div class="portfolio-desktop">
+      <div class="portfolio-item" style="left: 0%; top: 0px;">
+        <img src="https://api.builder.io/api/v1/image/assets/TEMP/978b665ce9b048e68332e1e4fbc6d2ee40d45d26?width=674" alt="Portfolio 1">
+      </div>
+      <div class="portfolio-item" style="left: 19.5%; top: 110px; background-color: #FFAA00;"></div>
+      <div class="portfolio-item" style="left: 39%; top: 0px; background-color: #105D0D;">
+        <img src="https://api.builder.io/api/v1/image/assets/TEMP/094fcd7ae7e21eb646cebaa52910b38473f534b7?width=688" alt="Portfolio 2">
+      </div>
+      <div class="portfolio-item" style="left: 58.5%; top: 110px; background-color: #FFAA00;">
+        <img src="https://api.builder.io/api/v1/image/assets/TEMP/ba33602caebcf9b830d89e366b901455f98feecb?width=636" alt="Portfolio 3">
+      </div>
+      <div class="portfolio-item" style="left: 78%; top: 0px; background-color: #105D0D;">
+        <img src="https://api.builder.io/api/v1/image/assets/TEMP/3ec60173ef94cab9e3ebc19dcf5501fac5e1f050?width=608" alt="Portfolio 4">
+      </div>
+    </div>
+
+    <!-- Mobile carousel -->
+    <div class="portfolio-mobile">
+      <div class="portfolio-item-mobile">
+        <img src="https://api.builder.io/api/v1/image/assets/TEMP/978b665ce9b048e68332e1e4fbc6d2ee40d45d26?width=674" alt="Portfolio 1">
+      </div>
+      <div class="portfolio-item-mobile" style="background-color: #FFAA00;"></div>
+      <div class="portfolio-item-mobile" style="background-color: #105D0D;">
+        <img src="https://api.builder.io/api/v1/image/assets/TEMP/094fcd7ae7e21eb646cebaa52910b38473f534b7?width=688" alt="Portfolio 2">
+      </div>
+      <div class="portfolio-item-mobile" style="background-color: #FFAA00;">
+        <img src="https://api.builder.io/api/v1/image/assets/TEMP/ba33602caebcf9b830d89e366b901455f98feecb?width=636" alt="Portfolio 3">
+      </div>
+      <div class="portfolio-item-mobile" style="background-color: #105D0D;">
+        <img src="https://api.builder.io/api/v1/image/assets/TEMP/3ec60173ef94cab9e3ebc19dcf5501fac5e1f050?width=608" alt="Portfolio 4">
+      </div>
+    </div>
+
+    <!-- See More Button -->
+    <button class="see-more-btn">SEE MORE</button>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2 class="section-title about-title">about</h2>
+    <p class="about-description">Welcome to Maya Creative Studio. We are dedicated to delivering creative and premium design solutions, including branding, T-shirt designs, posters, cup designs, and social media graphics. We believe that great design tells a story and leaves a lasting impression.</p>
+    <div class="about-footer">
+      <p class="copyright">© 2026 Maya. All Rights Reserved.</p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
