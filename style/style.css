@@ -649,3 +649,16 @@ body.dark-theme .home-icon-btn:hover{
 body.dark-theme .home-icon-btn:focus-visible {
   box-shadow: 0 0 0 3px rgba(255, 170, 0, 0.3);
 }
+/* ===== ICON ANIMATION ===== */
+
+@keyframes bounceIcon {
+  0%   { transform: translateY(0); }
+  40%  { transform: translateY(-4px); }
+  70%  { transform: translateY(0); }
+  100% { transform: translateY(-2px); }
+}
+
+.home-icon-btn:hover {
+  animation: bounceIcon 0.5s ease;
+  filter: drop-shadow(0 0 6px currentColor);
+}
