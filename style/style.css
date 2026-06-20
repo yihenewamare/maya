@@ -240,11 +240,12 @@ body {
   max-width: 610px;
   color: #000;
 }
-
 .social-icons {
   display: flex;
   align-items: center;
   gap: 1.75rem;
+
+  margin-top: 40px; /* Move icons down */
 }
 
 .social-link {
