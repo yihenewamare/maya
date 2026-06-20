@@ -545,50 +545,37 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--maya-green);
 }
-/* Header */
-.header {
-    text-align: center;
-    padding: 50px 20px;
-    background: #111;
-    color: white;
-}
+/* ===== PORTFOLIO GALLERY ===== */
 
-.header h1 {
-    font-size: 40px;
-}
-
-.header p {
-    opacity: 0.7;
-}
-
-/* Page container */
 .portfolio-container {
     padding: 40px;
     background: #0f0f0f;
     min-height: 100vh;
 }
 
-/* Gallery Grid */
+
+
+/* Grid layout */
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
 
-/* Each item */
+/* Each image box */
 .item {
     overflow: hidden;
     border-radius: 15px;
-    transition: 0.3s;
     border: 1px solid #222;
     background: #1a1a1a;
+    transition: 0.3s;
 }
 
+/* Image style */
 .item img {
     width: 100%;
-    height: 100%;
     display: block;
-    transition: 0.4s;
+    transition: 0.4s ease;
 }
 
 /* Hover effect */
