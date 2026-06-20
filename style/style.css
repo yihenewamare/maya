@@ -640,3 +640,12 @@ body.dark-theme .home-icon-btn{
 body.dark-theme .home-icon-btn:hover{
   background:rgba(255,170,0,0.15);
 }
+.home-icon-btn:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(16, 93, 13, 0.3);
+  border-radius: 50%;
+}
+
+body.dark-theme .home-icon-btn:focus-visible {
+  box-shadow: 0 0 0 3px rgba(255, 170, 0, 0.3);
+}
