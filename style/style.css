@@ -649,3 +649,8 @@ body.dark-theme .home-icon-btn:hover{
 body.dark-theme .home-icon-btn:focus-visible {
   box-shadow: 0 0 0 3px rgba(255, 170, 0, 0.3);
 }
+.home-icon-btn i,
+.home-icon-btn svg {
+  display: block;
+  line-height: 1;
+}
