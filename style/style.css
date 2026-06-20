@@ -545,71 +545,50 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--maya-green);
 }
-/* ==========================
-   THEME COLORS
-========================== */
+/* ===== THEME ===== */
 
-:root{
-  /* Main theme (your screenshot) */
-  --bg: #1E2438;          /* Dark navy */
-  --accent: #FFB000;     /* Golden yellow */
-  --card: #1E2438;       /* Card background */
-  --about: #A8B89B;      /* Light green */
-  --text: #ffffff;       /* White text */
-  --text-secondary: #cfcfcf;
+.dark-theme {
+  --maya-green: #FFAA00;
+  --maya-sage: #F0A75B;
+  --maya-amber: #FFAA00;
+  --maya-teal: #1E2438;
+  --maya-dark-green: #ffffff;
 }
 
-/* Dark alternative theme */
-.dark-theme{
-  --bg: #0F0F0F;
-  --accent: #105D0D;
-  --card: #1A1A1A;
-  --about: #222222;
-  --text: #ffffff;
-  --text-secondary: #bbbbbb;
-}
-/* Apply theme */
-body{
-  background: var(--bg);
-  color: var(--text);
-  transition: 0.3s ease;
+.dark-theme body,
+body.dark-theme {
+  background: #1E2438;
+  color: white;
 }
 
-.navbar{
-  background: var(--bg);
+body.dark-theme .hero,
+body.dark-theme .navbar,
+body.dark-theme .works {
+  background: #1E2438;
 }
 
-.hero{
-  background: var(--bg);
+body.dark-theme .services {
+  background: #F0A75B;
 }
 
-.works{
-  background: var(--bg);
+body.dark-theme .service-card {
+  background: #1E2438;
 }
 
-.services{
-  background: var(--accent);
+body.dark-theme .about {
+  background: #A8B89B;
 }
 
-.about{
-  background: var(--about);
+body.dark-theme .nav-link,
+body.dark-theme .brand-name,
+body.dark-theme .section-title,
+body.dark-theme .text-green,
+body.dark-theme .text-amber {
+  color: #FFAA00;
 }
 
-.service-card{
-  background: var(--card);
-}
-
-.brand-name,
-.nav-link,
-.section-title,
-.hero-title,
-.see-more-btn{
-  color: var(--accent);
-}
-
-.hero-description,
-.service-description,
-.about-description,
-.copyright{
-  color: var(--text-secondary);
+body.dark-theme .hero-description,
+body.dark-theme .service-description,
+body.dark-theme .copyright {
+  color: #ffffff;
 }
