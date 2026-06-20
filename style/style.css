@@ -471,7 +471,7 @@ body {
 }
 
 .see-more-btn {
-  display: block;
+  display: inline-block;
   margin: 0 auto;   /* CENTER IT */
 
   background: rgba(205, 207, 198, 0.6);
@@ -482,7 +482,7 @@ body {
   font-size: 0.875rem;
 
   border: none;
-  border-radius: 20px;
+  border-radius: 18px;
 
   padding: 0.625rem 2rem;
 
