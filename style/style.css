@@ -608,31 +608,35 @@ body.dark-theme .about{
   background:#A8B89B;
 }
   color: #ffffff;
-.home-btn{
+.home-icon-btn{
+  width:35px;
+  height:35px;
+
+  border:none;
+  border-radius:50%;
+
+  background:transparent;
+
   display:flex;
   align-items:center;
-  gap:8px;
-
-  background:none;
-  border:none;
+  justify-content:center;
 
   cursor:pointer;
 
   color:var(--maya-green);
 
-  font-family:'Inter',sans-serif;
-  font-size:12px;
-  font-weight:600;
-
   transition:0.3s;
 }
 
-.home-btn:hover{
-  color:var(--maya-amber);
+.home-icon-btn:hover{
+  background:rgba(16,93,13,0.1);
 }
 
-/* Theme color */
-body.dark-theme .home-btn{
+/* Theme */
+body.dark-theme .home-icon-btn{
   color:#FFAA00;
 }
+
+body.dark-theme .home-icon-btn:hover{
+  background:rgba(255,170,0,0.15);
 }
