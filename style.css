@@ -1,466 +1,547 @@
-.desktop {
-  display: flex;
-  flex-direction: column;
-  height: 2482px;
-  align-items: flex-start;
-  gap: 22px;
-  position: relative;
-  background-color: #ffffff;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Anton+SC&family=Anek+Tamil:wght@200;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.desktop .hero {
-  display: flex;
-  flex-direction: column;
-  width: 1440px;
-  height: 711px;
-  align-items: center;
-  gap: 108px;
-  position: relative;
-  background-color: #ffffff;
-  overflow: hidden;
+:root {
+  --maya-green: #105D0D;
+  --maya-sage: #9EBB9D;
+  --maya-amber: #FFAA00;
+  --maya-teal: #00403F;
+  --maya-dark-green: #0A4908;
 }
 
-.desktop .top-nav {
-  display: flex;
-  height: 40px;
-  align-items: flex-end;
-  justify-content: space-between;
-  padding: 0px 80px;
-  position: relative;
-  align-self: stretch;
-  width: 100%;
+body {
+  font-family: 'Anek Tamil', sans-serif;
+  color: #000;
+  background: #fff;
+  line-height: 1.6;
 }
 
-.desktop .navbar {
-  display: inline-flex;
-  align-items: center;
-  gap: 20px;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.desktop .group {
-  position: relative;
-  width: 20.02px;
-  height: 20px;
-  background-image: url(./img/vector.svg);
-  background-size: 100% 100%;
-}
-
-.desktop .text-wrapper {
-  position: relative;
-  width: fit-content;
-  font-family: "Inter-SemiBold", Helvetica;
-  font-weight: 600;
-  color: var(--colors-backgrounds-primary);
-  font-size: 12px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.desktop .div {
-  position: relative;
-  width: fit-content;
-  font-family: "Inter-SemiBold", Helvetica;
-  font-weight: 600;
-  color: #0f5d0d;
-  font-size: 12px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.desktop .CONTACT-ME {
-  position: relative;
-  width: fit-content;
-  font-family: "Inter-SemiBold", Helvetica;
-  font-weight: 600;
-  color: transparent;
-  font-size: 12px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.desktop .span {
-  color: #105d0d;
-}
-
-.desktop .text-wrapper-2 {
-  color: #ffffff;
-}
-
-.desktop .text-wrapper-3 {
-  color: #0f5d0d;
-}
-
-.desktop .frame {
-  display: inline-flex;
-  align-items: flex-end;
-  gap: 25px;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.desktop .vector {
-  position: relative;
-  width: 20px;
-  height: 20px;
-}
-
-.desktop .hero-2 {
-  display: inline-flex;
-  height: 591px;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 48px;
-  position: relative;
-}
-
-.desktop .frame-2 {
-  display: flex;
-  flex-direction: column;
-  width: 708px;
-  height: 563px;
-  align-items: flex-start;
-  justify-content: space-between;
-  padding: 20px 0px;
-  position: relative;
-}
-
-.desktop .left {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  position: relative;
-  align-self: stretch;
-  width: 100%;
-  flex: 0 0 auto;
-}
-
-.desktop .your-idea-our-design {
-  position: relative;
-  align-self: stretch;
-  margin-top: -1px;
-  font-family: "Anton SC-Regular", Helvetica;
-  font-weight: 400;
-  color: transparent;
-  font-size: 120px;
-  letter-spacing: 0;
-  line-height: 112px;
-}
-
-.desktop .text-wrapper-4 {
-  color: #00403f;
-}
-
-.desktop .text-wrapper-5 {
-  color: #ffaa00;
-}
-
-.desktop .at-maya-we-turn {
-  position: relative;
-  width: 610px;
-  height: 111px;
-  font-family: "Anek Tamil-ExtraLight", Helvetica;
-  font-weight: 200;
-  color: #000000;
-  font-size: 13px;
-  text-align: justify;
-  letter-spacing: 0;
-  line-height: 23px;
-}
-
-.desktop .img {
-  position: relative;
-  width: 153px;
-  flex: 0 0 auto;
-}
-
-.desktop .right {
-  display: flex;
-  width: 562px;
-  height: 561px;
-  align-items: flex-start;
-  gap: 10px;
-  padding: 27px 29px;
-  position: relative;
-  background-color: #0f5d0d;
-  border-radius: 281px;
-}
-
-.desktop .ellipse {
-  position: relative;
-  width: 504.79px;
-  height: 504.79px;
-  margin-right: -0.79px;
-  background-color: #ffffff;
-  border-radius: 252.4px;
-}
-
-.desktop .ellipse-2 {
-  position: absolute;
-  top: 69px;
-  left: 114px;
-  width: 109px;
-  height: 109px;
-  background-color: #ffffff;
-  border-radius: 54.69px;
-}
-
-.desktop .ellipse-3 {
-  position: absolute;
-  top: 54px;
-  left: 54px;
-  width: 454px;
-  height: 454px;
-  background-color: #0f5d0d;
-  border-radius: 227.16px;
-}
-
-.desktop .ellipse-4 {
-  position: absolute;
-  top: 256px;
-  left: 261px;
-  width: 49px;
-  height: 49px;
-  background-color: #ffffff;
-  border-radius: 24.5px;
-}
-
-.desktop .ellipse-5 {
-  position: absolute;
-  top: 172px;
-  left: 194px;
-  width: 87px;
-  height: 87px;
-  background-color: #ffffff;
-  border-radius: 43.75px;
-}
-
-.desktop .ellipse-6 {
-  position: absolute;
-  top: 77px;
-  left: 108px;
-  width: 111px;
-  height: 111px;
-  background-color: #ffffff;
-  border-radius: 55.5px;
-}
-
-.desktop .frame-3 {
-  position: relative;
-  align-self: stretch;
-  width: 100%;
-  height: 1749px;
-  background-color: #ffffff;
-  overflow: hidden;
-}
-
-.desktop .services-wrapper {
-  position: absolute;
+/* Navbar */
+.navbar {
+  position: fixed;
   top: 0;
   left: 0;
-  width: 1440px;
-  height: 622px;
-  display: flex;
-  background-color: #9dbb9c;
+  right: 0;
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(4px);
+  border-bottom: 1px solid #f3f4f6;
 }
 
-.desktop .services {
-  margin-top: 49px;
-  width: 197px;
-  height: 23px;
-  margin-left: 621px;
-  font-family: "Anek Tamil-Medium", Helvetica;
-  font-weight: 500;
-  color: #ffffff;
-  font-size: 49px;
-  text-align: justify;
-  letter-spacing: 0;
-  line-height: 23px;
-  white-space: nowrap;
-}
-
-.desktop .div-wrapper {
+.navbar-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
   display: flex;
-  width: 260px;
   align-items: center;
-  justify-content: center;
-  gap: 10px;
-  position: absolute;
-  top: 632px;
-  left: 617px;
+  justify-content: space-between;
+  height: 56px;
 }
 
-.desktop .text-wrapper-6 {
-  position: relative;
-  width: 237px;
-  margin-top: -1px;
-  font-family: "Anek Tamil-Medium", Helvetica;
-  font-weight: 500;
-  color: #105d0d;
-  font-size: 45px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.desktop .frame-4 {
-  display: flex;
-  width: 1280px;
+.nav-left {
+  display: none;
   align-items: center;
-  gap: 20px;
-  position: absolute;
-  top: 161px;
-  left: 66px;
+  gap: 1.5rem;
 }
 
-.desktop .frame-5 {
+.nav-left.active {
+  display: flex;
+}
+
+.nav-link {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--maya-green);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  transition: color 0.3s ease;
+  letter-spacing: 0.05em;
+}
+
+.nav-link:hover {
+  color: var(--maya-amber);
+}
+
+.nav-right {
+  display: none;
+  align-items: center;
+  gap: 1.25rem;
+  margin-left: auto;
+}
+
+.nav-right.active {
+  display: flex;
+}
+
+.brand-name {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--maya-green);
+  letter-spacing: 0.1em;
+}
+
+.hamburger {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
-  gap: 32px;
-  padding: 32px;
-  position: relative;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--maya-green);
+  transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(9px, 9px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+  background: #fff;
+  border-top: 1px solid #f3f4f6;
+  padding: 1rem 1.25rem;
+}
+
+.mobile-menu.active {
+  display: flex;
+}
+
+.mobile-nav-link {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--maya-green);
+  text-decoration: none;
+  letter-spacing: 0.05em;
+}
+
+@media (min-width: 768px) {
+  .nav-left.active,
+  .nav-left {
+    display: flex;
+  }
+  
+  .nav-right.active,
+  .nav-right {
+    display: flex;
+  }
+  
+  .hamburger {
+    display: none;
+  }
+  
+  .mobile-menu {
+    display: none !important;
+  }
+}
+
+/* Hero Section */
+.hero {
+  min-height: 100vh;
+  padding-top: 56px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 3rem 1.25rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.hero-left {
   flex: 1;
-  flex-grow: 1;
-  background-color: #ffffff;
-  border-radius: 72px 0px 72px 72px;
-}
-
-.desktop .text-wrapper-7 {
-  position: relative;
-  width: fit-content;
-  margin-top: -1px;
-  font-family: "Anek Tamil-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 20px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.desktop .high-quality-video {
-  position: relative;
-  align-self: stretch;
-  height: 201px;
-  font-family: "Anek Tamil-ExtraLight", Helvetica;
-  font-weight: 200;
-  color: #000000;
-  font-size: 17px;
-  text-align: justify;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.desktop .frame-6 {
-  position: absolute;
-  top: 695px;
-  left: 27px;
-  width: 1440px;
-  height: 1054px;
   display: flex;
   flex-direction: column;
+  gap: 1.5rem;
 }
 
-.desktop .frame-7 {
-  margin-left: 77px;
-  width: 1277px;
-  height: 526px;
-}
-
-.desktop .frame-8 {
-  display: inline-flex;
-  margin-left: 1213px;
-  width: 141px;
-  height: 40px;
-  position: relative;
-  margin-top: 25px;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  padding: 9px 35px 25px 30px;
-  background-color: #cccfc599;
-  border-radius: 20px;
-}
-
-.desktop .text-wrapper-8 {
-  position: relative;
-  align-self: stretch;
-  margin-top: -1px;
-  margin-bottom: -11px;
-  font-family: "Inter-SemiBold", Helvetica;
-  font-weight: 600;
-  color: #105d0d;
-  font-size: 15px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.desktop .frame-9 {
+.hero-text {
   display: flex;
-  margin-left: -27px;
-  width: 1438px;
-  height: 452px;
-  position: relative;
-  margin-top: 11px;
   flex-direction: column;
-  align-items: center;
-  gap: 24px;
-  padding: 37px 68px 78px 120px;
-  background-color: #ffaa0099;
+  gap: 1.25rem;
 }
 
-.desktop .about {
-  position: relative;
-  width: 139px;
-  height: 57px;
-  margin-top: -1px;
-  font-family: "Anek Tamil-Medium", Helvetica;
-  font-weight: 500;
-  color: #105d0d;
-  font-size: 45px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.desktop .welcome-to-maya-wrapper {
-  position: relative;
-  width: 1238px;
-  height: 213px;
-}
-
-.desktop .welcome-to-maya {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 1238px;
-  font-family: "Anek Tamil-Regular", Helvetica;
+.hero-title {
+  font-family: 'Anton SC', sans-serif;
+  font-size: 2rem;
+  line-height: 0.93;
   font-weight: 400;
-  color: #0a4808;
-  font-size: 26px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
+  text-transform: uppercase;
 }
 
-.desktop .element-maya-all-rights-wrapper {
-  position: relative;
-  width: 476px;
-  height: 32px;
-  margin-bottom: -13px;
+@media (min-width: 640px) {
+  .hero-title {
+    font-size: 3rem;
+  }
 }
 
-.desktop .element-maya-all-rights {
-  position: absolute;
-  top: 16px;
-  left: 0;
-  width: 396px;
-  font-family: "Anek Tamil-Medium", Helvetica;
+@media (min-width: 1024px) {
+  .hero-title {
+    font-size: 7.5rem;
+  }
+  
+  .hero-content {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 3rem 2.5rem;
+    gap: 3rem;
+  }
+}
+
+.text-green {
+  color: var(--maya-green);
+}
+
+.text-amber {
+  color: var(--maya-amber);
+}
+
+.hero-description {
+  font-family: 'Anek Tamil', sans-serif;
+  font-weight: 200;
+  font-size: 13px;
+  line-height: 23px;
+  text-align: justify;
+  text-transform: capitalize;
+  max-width: 610px;
+  color: #000;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.social-link:hover {
+  opacity: 0.7;
+}
+
+.hero-circle {
+  flex-shrink: 0;
+  width: 280px;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 640px) {
+  .hero-circle {
+    width: 380px;
+    height: 380px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-circle {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+.hero-circle svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Services Section */
+.services {
+  background: var(--maya-sage);
+  padding: 3.5rem 1.25rem;
+}
+
+@media (min-width: 1024px) {
+  .services {
+    padding: 5rem 1.25rem;
+  }
+}
+
+.section-title {
+  font-family: 'Anek Tamil', sans-serif;
   font-weight: 500;
-  color: #000000;
-  font-size: 24px;
-  letter-spacing: 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 3rem;
+  letter-spacing: 0.05em;
+}
+
+@media (min-width: 640px) {
+  .section-title {
+    font-size: 2.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-title {
+    font-size: 2.75rem;
+  }
+}
+
+.services-title {
+  color: #fff;
+}
+
+.services-grid {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1280px) {
+  .services-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 72px 0 72px 72px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2rem;
+}
+
+.service-title {
+  font-family: 'Anek Tamil', sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: #000;
+  text-transform: uppercase;
+  align-self: flex-end;
+}
+
+.service-description {
+  font-family: 'Anek Tamil', sans-serif;
+  font-weight: 200;
+  font-size: 17px;
+  color: #000;
+  text-align: justify;
+  text-transform: lowercase;
   line-height: normal;
+}
+
+/* Works Section */
+.works {
+  background: #fff;
+  padding: 3.5rem 1.25rem;
+}
+
+@media (min-width: 1024px) {
+  .works {
+    padding: 5rem 1.25rem;
+  }
+}
+
+.works .section-title {
+  color: var(--maya-green);
+  margin-bottom: 3rem;
+}
+
+.portfolio-desktop {
+  display: none;
+  position: relative;
+  height: 480px;
+  max-width: 1280px;
+  margin: 0 auto 2.5rem;
+}
+
+@media (min-width: 1024px) {
+  .portfolio-desktop {
+    display: block;
+  }
+}
+
+.portfolio-item {
+  position: absolute;
+  width: 22%;
+  height: 355px;
+  overflow: hidden;
+  border-radius: 4px;
+  background-size: cover;
+  background-position: center;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 115%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.portfolio-mobile {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  scroll-snap-type: x mandatory;
+  margin-bottom: 2.5rem;
+}
+
+@media (min-width: 1024px) {
+  .portfolio-mobile {
+    display: none;
+  }
+}
+
+.portfolio-item-mobile {
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  width: 240px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 4px;
+  background-size: cover;
+  background-position: center;
+}
+
+.portfolio-item-mobile img {
+  width: 100%;
+  height: 115%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.see-more-btn {
+  display: block;
+  margin-left: auto;
+  background: rgba(205, 207, 198, 0.6);
+  color: var(--maya-green);
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+  border: none;
+  border-radius: 20px;
+  padding: 0.625rem 2rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.see-more-btn:hover {
+  background: rgba(205, 207, 198, 0.85);
+}
+
+/* About Section */
+.about {
+  background: rgba(255, 170, 0, 0.6);
+  padding: 3.5rem 1.25rem;
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .about {
+    padding: 5rem 1.25rem;
+  }
+}
+
+.about-title {
+  color: var(--maya-green);
+}
+
+.about-description {
+  font-family: 'Anek Tamil', sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: var(--maya-dark-green);
+  text-transform: uppercase;
+  line-height: normal;
+  max-width: 56rem;
+  margin: 0 auto 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .about-description {
+    font-size: 1.5rem;
+  }
+}
+
+.about-footer {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.copyright {
+  font-family: 'Anek Tamil', sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: #000;
+  text-transform: uppercase;
+}
+
+@media (min-width: 640px) {
+  .copyright {
+    font-size: 1.5rem;
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--maya-sage);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--maya-green);
 }
