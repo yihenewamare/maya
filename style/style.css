@@ -545,30 +545,71 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--maya-green);
 }
-/* Theme Colors */
-:root {
-  --bg-color: #ffffff;
-  --text-color: #111;
-  --icon-color: #105D0D;
+/* ==========================
+   THEME COLORS
+========================== */
+
+:root{
+  /* Main theme (your screenshot) */
+  --bg: #1E2438;          /* Dark navy */
+  --accent: #FFB000;     /* Golden yellow */
+  --card: #1E2438;       /* Card background */
+  --about: #A8B89B;      /* Light green */
+  --text: #ffffff;       /* White text */
+  --text-secondary: #cfcfcf;
 }
 
-.dark-theme {
-  --bg-color: #0f0f0f;
-  --text-color: #ffffff;
-  --icon-color: #ffffff;
+/* Dark alternative theme */
+.dark-theme{
+  --bg: #0F0F0F;
+  --accent: #105D0D;
+  --card: #1A1A1A;
+  --about: #222222;
+  --text: #ffffff;
+  --text-secondary: #bbbbbb;
 }
-
 /* Apply theme */
-body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
+body{
+  background: var(--bg);
+  color: var(--text);
+  transition: 0.3s ease;
 }
 
-/* Theme button */
-.theme-btn {
-  background: none;
-  border: none;
-  font-size: 22px;
-  cursor: pointer;
-  color: var(--icon-color);
+.navbar{
+  background: var(--bg);
+}
+
+.hero{
+  background: var(--bg);
+}
+
+.works{
+  background: var(--bg);
+}
+
+.services{
+  background: var(--accent);
+}
+
+.about{
+  background: var(--about);
+}
+
+.service-card{
+  background: var(--card);
+}
+
+.brand-name,
+.nav-link,
+.section-title,
+.hero-title,
+.see-more-btn{
+  color: var(--accent);
+}
+
+.hero-description,
+.service-description,
+.about-description,
+.copyright{
+  color: var(--text-secondary);
 }
