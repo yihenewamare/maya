@@ -546,49 +546,51 @@ body {
   background: var(--maya-green);
 }
 /* ===== THEME ===== */
-
-.dark-theme {
-  --maya-green: #FFAA00;
-  --maya-sage: #F0A75B;
-  --maya-amber: #FFAA00;
-  --maya-teal: #1E2438;
-  --maya-dark-green: #ffffff;
+/* Theme button */
+.theme-btn{
+  background:none;
+  border:none;
+  cursor:pointer;
+  font-size:20px;
+  color:inherit;
 }
 
-.dark-theme body,
-body.dark-theme {
-  background: #1E2438;
-  color: white;
+/* New theme */
+body.dark-theme{
+  background:#1E2438;
 }
 
-body.dark-theme .hero,
 body.dark-theme .navbar,
-body.dark-theme .works {
-  background: #1E2438;
-}
-
-body.dark-theme .services {
-  background: #F0A75B;
-}
-
-body.dark-theme .service-card {
-  background: #1E2438;
-}
-
-body.dark-theme .about {
-  background: #A8B89B;
+body.dark-theme .hero,
+body.dark-theme .works{
+  background:#1E2438;
 }
 
 body.dark-theme .nav-link,
 body.dark-theme .brand-name,
 body.dark-theme .section-title,
 body.dark-theme .text-green,
-body.dark-theme .text-amber {
-  color: #FFAA00;
+body.dark-theme .text-amber{
+  color:#FFAA00;
 }
 
-body.dark-theme .hero-description,
+body.dark-theme .services{
+  background:#F0A75B;
+}
+
+body.dark-theme .service-card{
+  background:#1E2438;
+}
+
+body.dark-theme .service-title,
 body.dark-theme .service-description,
-body.dark-theme .copyright {
+body.dark-theme .hero-description,
+body.dark-theme .copyright{
+  color:white;
+}
+
+body.dark-theme .about{
+  background:#A8B89B;
+}
   color: #ffffff;
 }
