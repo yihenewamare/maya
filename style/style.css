@@ -472,19 +472,23 @@ body {
 
 .see-more-btn {
   display: block;
-  margin: 0 auto;
+  margin: 0 auto;   /* CENTER IT */
+
   background: rgba(205, 207, 198, 0.6);
   color: var(--maya-green);
+
   font-family: 'Inter', sans-serif;
   font-weight: 600;
   font-size: 0.875rem;
+
   border: none;
   border-radius: 20px;
+
   padding: 0.625rem 2rem;
+
   cursor: pointer;
   transition: background 0.3s ease;
 }
-
 .see-more-btn:hover {
   background: rgba(205, 207, 198, 0.85);
 }
