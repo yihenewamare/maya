@@ -344,7 +344,6 @@ body {
     grid-template-columns: repeat(4, 1fr);
   }
 }
-
 .service-card {
   background: #fff;
   border-radius: 72px 0 72px 72px;
@@ -353,8 +352,13 @@ body {
   flex-direction: column;
   align-items: flex-end;
   gap: 2rem;
-}
 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
 .service-title {
   font-family: 'Anek Tamil', sans-serif;
   font-weight: 500;
