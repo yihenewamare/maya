@@ -398,11 +398,6 @@ body {
   max-width: 1280px;
   margin: 0 auto 2.5rem;
 }
-
-@media (min-width: 1024px) {
-  .portfolio-desktop {
-    display: block;
-  }
 }
 
 .portfolio-item {
@@ -421,38 +416,53 @@ body {
   object-fit: cover;
   object-position: top;
 }
-
 .portfolio-mobile {
   display: flex;
-  gap: 1rem;
+  gap: 20px;
+
   overflow-x: auto;
-  padding-bottom: 1rem;
+  scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
+
+  padding: 20px 0;
   margin-bottom: 2.5rem;
 }
 
-@media (min-width: 1024px) {
-  .portfolio-mobile {
-    display: none;
-  }
+.portfolio-mobile::-webkit-scrollbar {
+  height: 8px;
+}
+
+.portfolio-mobile::-webkit-scrollbar-thumb {
+  background: #9EBB9D;
+  border-radius: 20px;
+}
+
+.portfolio-mobile::-webkit-scrollbar-track {
+  background: transparent;
 }
 
 .portfolio-item-mobile {
-  flex-shrink: 0;
-  scroll-snap-align: start;
-  width: 240px;
-  height: 300px;
+  flex: 0 0 320px;
+
+  height: 420px;
+
+  scroll-snap-align: center;
+
   overflow: hidden;
-  border-radius: 4px;
-  background-size: cover;
-  background-position: center;
+  border-radius: 15px;
 }
 
 .portfolio-item-mobile img {
   width: 100%;
-  height: 115%;
+  height: 100%;
+
   object-fit: cover;
-  object-position: top;
+
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item-mobile:hover img {
+  transform: scale(1.05);
 }
 
 .see-more-btn {
