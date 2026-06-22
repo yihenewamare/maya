@@ -778,7 +778,10 @@ body.dark-theme .home-icon-btn:focus-visible {
   }
 
 }
+/* ===== CONTACT THEME ===== */
+
 /* Light Theme */
+
 .contact {
   color: #222;
 }
@@ -791,41 +794,29 @@ body.dark-theme .home-icon-btn:focus-visible {
   color: #105D0D;
 }
 
+
 /* Dark Theme */
+
 body.dark-theme .contact {
-  color: #ffffff;
+  color: white;
 }
 
 body.dark-theme .contact-title {
   color: #FFAA00;
 }
 
-body.dark-theme .contact-info h3 {
-  color: #ffffff;
-}
-
-body.dark-theme .contact-item {
-  color: #ffffff;
-}
-
-body.dark-theme .contact-item a {
-  color: #FFAA00;
+body.dark-theme .contact h3 {
+  color: white;
 }
 
 body.dark-theme .contact p {
-  color: #dddddd;
+  color: white;
 }
-/* Dark Theme Contact Section */
 
-body.dark-theme .contact h3,
-body.dark-theme .contact p,
 body.dark-theme .contact .contact-item {
-  color: white !important;
+  color: white;
 }
 
 body.dark-theme .contact .contact-item a {
-  color: #00b300 !important;
-}
-  body.dark-theme .contact .contact-item {
-  color: white !important;
+  color: #FFAA00;
 }
