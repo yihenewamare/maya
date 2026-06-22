@@ -666,3 +666,16 @@ body.dark-theme .home-icon-btn:focus-visible {
   animation: bounceIcon 0.5s ease;
   filter: drop-shadow(0 0 6px currentColor);
 }
+.hero-circle svg {
+  animation: rotateLogo 20s linear infinite;
+}
+
+@keyframes rotateLogo {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
