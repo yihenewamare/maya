@@ -776,11 +776,40 @@ body.dark-theme .home-icon-btn:focus-visible {
   .contact-container {
     flex-direction: column;
   }
+/* Light Theme */
+.contact {
+  color: #222;
+}
+
 .contact-title {
-  color: #105D0D; /* Light theme */
-  transition: color 0.3s ease;
+  color: #105D0D;
+}
+
+.contact-item a {
+  color: #105D0D;
+}
+
+/* Dark Theme */
+body.dark-theme .contact {
+  color: #ffffff;
 }
 
 body.dark-theme .contact-title {
-  color: #FFAA00; /* Dark theme */
+  color: #FFAA00;
+}
+
+body.dark-theme .contact-info h3 {
+  color: #ffffff;
+}
+
+body.dark-theme .contact-item {
+  color: #ffffff;
+}
+
+body.dark-theme .contact-item a {
+  color: #FFAA00;
+}
+
+body.dark-theme .contact p {
+  color: #dddddd;
 }
