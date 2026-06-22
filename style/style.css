@@ -662,20 +662,30 @@ body.dark-theme .home-icon-btn:focus-visible {
   100% { transform: translateY(-2px); }
 }
 
-.home-icon-btn:hover {
-  animation: bounceIcon 0.5s ease;
-  filter: drop-shadow(0 0 6px currentColor);
-}
-.hero-circle svg {
-  animation: rotateLogo 20s linear infinite;
+.logo-svg {
+  animation:
+    intro 1.5s ease forwards,
+    float 4s ease-in-out infinite 1.5s;
 }
 
-@keyframes rotateLogo {
+@keyframes intro {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: scale(0.7) rotate(-20deg);
   }
 
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: scale(1) rotate(0);
+  }
+}
+
+@keyframes float {
+  0%,100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
   }
 }
