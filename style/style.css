@@ -776,3 +776,11 @@ body.dark-theme .home-icon-btn:focus-visible {
   .contact-container {
     flex-direction: column;
   }
+.contact-title {
+  color: #105D0D; /* Light theme */
+  transition: color 0.3s ease;
+}
+
+body.dark-theme .contact-title {
+  color: #FFAA00; /* Dark theme */
+}
