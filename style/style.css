@@ -771,3 +771,10 @@ body.dark-theme .home-icon-btn:focus-visible {
   transform: translateY(-3px);
   opacity: .9;
 }
+@media (max-width: 768px) {
+
+  .contact-container {
+    flex-direction: column;
+  }
+
+}
