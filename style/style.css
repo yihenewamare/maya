@@ -776,6 +776,8 @@ body.dark-theme .home-icon-btn:focus-visible {
   .contact-container {
     flex-direction: column;
   }
+
+}
 /* Light Theme */
 .contact {
   color: #222;
