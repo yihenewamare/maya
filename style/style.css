@@ -813,3 +813,17 @@ body.dark-theme .contact-item a {
 body.dark-theme .contact p {
   color: #dddddd;
 }
+/* Dark Theme Contact Section */
+
+body.dark-theme .contact h3,
+body.dark-theme .contact p,
+body.dark-theme .contact .contact-item {
+  color: white !important;
+}
+
+body.dark-theme .contact .contact-item a {
+  color: #00b300 !important;
+}
+  body.dark-theme .contact .contact-item {
+  color: white !important;
+}
